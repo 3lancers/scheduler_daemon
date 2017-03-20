@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.date = "2014-02-25"
   s.description = "a Rails 2.3, Rails 3, and Ruby compatible scheduler daemon.  Replaces cron/rake pattern of periodically running rake tasks to perform maintenance tasks, only loading the environment ONCE."
   s.email = "ssoroka78@gmail.com"
-  s.executables = ["scheduler_daemon"]
+  s.executables = ["scheduler_daemon", "scheduler_runner"]
   s.extra_rdoc_files = [
     "README.markdown"
   ]
