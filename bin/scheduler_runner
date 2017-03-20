@@ -5,7 +5,7 @@ require 'scheduler_daemon/command_line_args_to_hash'
 args = CommandLineArgsToHash.parse(ARGV)
 daemons_lib_dir = File.expand_path(File.join(File.dirname(__FILE__), '..', "lib"))
 
-Dir.chdir(args.try(:[], :dir) || Dir.pwd)
+Dir.chdir(args[:dir] || Dir.pwd)
 
 require File.join(daemons_lib_dir, 'scheduler_daemon', 'base')
 
